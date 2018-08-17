@@ -1,0 +1,96 @@
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="http://collectivecloudperu.com"><img src="http://collectivecloudperu.com/img/logo.png" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="http://collectivecloudperu.com">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://blog.collectivecloudperu.com" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://collectivecloudperu.com/merchandising/" target="_blank">Merchandising</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          </ul>
+          <form name="bencc" method="get" action="http://www.google.com/search" id="bencc" class="form-inline mt-2 mt-md-0" target="_blank">
+            <input type="hidden" name="domains" value="blog.collectivecloudperu.com">
+            <input type="hidden" name="sitesearch" value="blog.collectivecloudperu.com">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Buscar...">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="document.getElementById('bencc').submit()">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>    
+
+    <main role="main">      
+
+      <section class="text-center">
+        <div class="container">
+
+          <h1 class="jumbotron-heading">{{titulo}}</h1>
+          <p>"Has click en el botón de abajo, Crear PDF"</p>
+
+        </div>
+      </section>
+
+      <div class="album py-5" align="center">
+        <div class="container" id="contenido">
+
+          <h2>Postres</h2>
+
+          <div class="row">            
+            
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="{{imagen1}}" title="Torta de Chocolate" alt="Torta de Chocolate">
+                <div class="card-body">
+                  <p class="card-text">Torta de Chocolate</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="{{imagen2}}" title="Pie de Manzana" alt="Pie de Manzana">
+                <div class="card-body">
+                  <p class="card-text">Pie de Manzana</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="{{imagen3}}" title="Arroz con Leche" alt="Arroz con Leche">
+                <div class="card-body">
+                  <p class="card-text">Arroz con Leche</p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>          
+          
+        </div>
+
+        <button (click)="generarPDF()" class="btn btn-info">Crear PDF</button>
+
+      </div>
+
+    </main>
+
+
+    <footer class="text-muted">
+        <div align="center">
+          Desarrollado por <a href="http://www.collectivecloudperu.com" target="_blank">Collective Cloud Perú</a>
+      </div>
+    </footer>   
